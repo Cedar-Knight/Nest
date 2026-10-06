@@ -1,0 +1,210 @@
+{
+  "extractors": [
+    "pypdf",
+    "pdfplumber"
+  ],
+  "scope": "PDF pages containing first-180-second external-entry events, selected from parsed page provenance",
+  "files_checked": 15,
+  "first_180s_events_checked": 3415,
+  "checks": [
+    {
+      "source_file": "S3 Dataset/2013 Correlation Data 229 8-24.pdf",
+      "pages_checked": [
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "first_180s_events": 183,
+      "counts_and_event_multiplicity_match": true
+    },
+    {
+      "source_file": "S3 Dataset/2013 Correlation Data 229 8-25.pdf",
+      "pages_checked": [
+        70
+      ],
+      "first_180s_events": 31,
+      "counts_and_event_multiplicity_match": true
+    },
+    {
+      "source_file": "S3 Dataset/2013 Correlation Data 229 8-26.pdf",
+      "pages_checked": [
+        36,
+        37,
+        38,
+        39
+      ],
+      "first_180s_events": 111,
+      "counts_and_event_multiplicity_match": true
+    },
+    {
+      "source_file": "S3 Dataset/2013 Correlation Data 242 8-25.pdf",
+      "pages_checked": [
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "first_180s_events": 190,
+      "counts_and_event_multiplicity_match": true
+    },
+    {
+      "source_file": "S3 Dataset/2013 Correlation Data 25 8-24.pdf",
+      "pages_checked": [
+        24,
+        25,
+        26
+      ],
+      "first_180s_events": 71,
+      "counts_and_event_multiplicity_match": true
+    },
+    {
+      "source_file": "S3 Dataset/2013 Correlation Data 367 8-18.pdf",
+      "pages_checked": [
+        11,
+        12,
+        13
+      ],
+      "first_180s_events": 89,
+      "counts_and_event_multiplicity_match": true
+    },
+    {
+      "source_file": "S3 Dataset/2013 Correlation Data 367 8-19.pdf",
+      "pages_checked": [
+        10,
+        11,
+        12
+      ],
+      "first_180s_events": 102,
+      "counts_and_event_multiplicity_match": true
+    },
+    {
+      "source_file": "S3 Dataset/2013 Correlation Data 367 8-20.pdf",
+      "pages_checked": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "first_180s_events": 168,
+      "counts_and_event_multiplicity_match": true
+    },
+    {
+      "source_file": "S3 Dataset/2013 Correlation Data 367 8-21.pdf",
+      "pages_checked": [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54
+      ],
+      "first_180s_events": 195,
+      "counts_and_event_multiplicity_match": true
+    },
+    {
+      "source_file": "S3 Dataset/2013 Correlation Data 868 8-19.pdf",
+      "pages_checked": [
+        26,
+        27,
+        28
+      ],
+      "first_180s_events": 104,
+      "counts_and_event_multiplicity_match": true
+    },
+    {
+      "source_file": "S3 Dataset/2013 Correlation Data 868 8-20.pdf",
+      "pages_checked": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "first_180s_events": 246,
+      "counts_and_event_multiplicity_match": true
+    },
+    {
+      "source_file": "S3 Dataset/2013 Correlation Data 868 8-21.pdf",
+      "pages_checked": [
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "first_180s_events": 267,
+      "counts_and_event_multiplicity_match": true
+    },
+    {
+      "source_file": "S3 Dataset/2013 Correlation Data N5 8-17.pdf",
+      "pages_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "first_180s_events": 747,
+      "counts_and_event_multiplicity_match": true
+    },
+    {
+      "source_file": "S3 Dataset/2013 Correlation Data N5 8-18.pdf",
+      "pages_checked": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "first_180s_events": 490,
+      "counts_and_event_multiplicity_match": true
+    },
+    {
+      "source_file": "S3 Dataset/2013 Correlation Data N5 8-20.pdf",
+      "pages_checked": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "first_180s_events": 421,
+      "counts_and_event_multiplicity_match": true
+    }
+  ]
+}

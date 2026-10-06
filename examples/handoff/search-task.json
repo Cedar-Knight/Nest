@@ -1,0 +1,27 @@
+{
+  "schema_version": "draft-0",
+  "task_id": "demo-search-001",
+  "robot_id": "scout-01",
+  "round_id": 1,
+  "type": "search",
+  "source": "manual_example",
+  "area": {
+    "frame": "demo-floor",
+    "unit": "m",
+    "map_version": "demo-map-1",
+    "bounds": [
+      0,
+      0,
+      2,
+      2
+    ]
+  },
+  "observation": {
+    "max_seconds_per_candidate": 180,
+    "threshold_events": 5
+  },
+  "return_condition": {
+    "kind": "simulated_end_of_task",
+    "hardware_policy": "undecided"
+  }
+}

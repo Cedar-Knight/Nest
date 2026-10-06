@@ -1,0 +1,27 @@
+# Local history and working materials
+/archive/
+/tmp/
+/output/
+/docs/sources/
+/docs/Nest-current-frame.md
+/docs/Nest-work-handoff-*.md
+
+# Environments and editor state
+.venv*/
+.idea/
+.vscode/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.DS_Store
+desktop.ini
+.env
+.env.*
+!.env.example
+
+# Robot recordings and generated runs (share a reviewed sample explicitly)
+/data/raw/
+/data/runs/
+/build/
+/dist/

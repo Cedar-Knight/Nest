@@ -1,0 +1,16 @@
+source_file,colony,date,first_180s_in_events,first_180s_out_events,first_180s_entry_events,fifth_entry_time_s,rule_reached_by_180s
+S3 Dataset/2013 Correlation Data 229 8-24.pdf,229,2013-08-24,70,113,183,13,True
+S3 Dataset/2013 Correlation Data 229 8-25.pdf,229,2013-08-25,22,9,31,37,True
+S3 Dataset/2013 Correlation Data 229 8-26.pdf,229,2013-08-26,51,60,111,28,True
+S3 Dataset/2013 Correlation Data 242 8-25.pdf,242,2013-08-25,96,94,190,12,True
+S3 Dataset/2013 Correlation Data 25 8-24.pdf,25,2013-08-24,48,23,71,17,True
+S3 Dataset/2013 Correlation Data 367 8-18.pdf,367,2013-08-18,63,26,89,17,True
+S3 Dataset/2013 Correlation Data 367 8-19.pdf,367,2013-08-19,69,33,102,17,True
+S3 Dataset/2013 Correlation Data 367 8-20.pdf,367,2013-08-20,107,61,168,13,True
+S3 Dataset/2013 Correlation Data 367 8-21.pdf,367,2013-08-21,111,84,195,13,True
+S3 Dataset/2013 Correlation Data 868 8-19.pdf,868,2013-08-19,63,41,104,21,True
+S3 Dataset/2013 Correlation Data 868 8-20.pdf,868,2013-08-20,123,123,246,11,True
+S3 Dataset/2013 Correlation Data 868 8-21.pdf,868,2013-08-21,98,169,267,14,True
+S3 Dataset/2013 Correlation Data N5 8-17.pdf,N5,2013-08-17,370,377,747,8,True
+S3 Dataset/2013 Correlation Data N5 8-18.pdf,N5,2013-08-18,268,222,490,9,True
+S3 Dataset/2013 Correlation Data N5 8-20.pdf,N5,2013-08-20,208,213,421,9,True

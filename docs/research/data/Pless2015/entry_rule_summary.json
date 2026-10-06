@@ -1,0 +1,70 @@
+{
+  "source": "Pless et al. (2015), S3 Dataset, DOI 10.1371/journal.pone.0141971.s004",
+  "archive_sha256": "ec3103f7db6fc1524cbda196159c4e63153d51dc02cd2547a45e0befab9a0b45",
+  "files": 15,
+  "colonies": 6,
+  "parsed_event_rows": 38161,
+  "external_entry_event_rows": 16448,
+  "window_origin": "Video time 0, not first detected ant",
+  "window_predicate": "0 <= time_s <= 180; preserve each author-supplied event row",
+  "threshold": 5,
+  "trials_reaching_threshold": 15,
+  "first_180s_count_min": 31,
+  "first_180s_count_median": 183,
+  "first_180s_count_max": 747,
+  "fifth_event_time_min_s": 8,
+  "fifth_event_time_median_s": 13,
+  "fifth_event_time_max_s": 37,
+  "first_180s_counts_sorted": [
+    31,
+    71,
+    89,
+    102,
+    104,
+    111,
+    168,
+    183,
+    190,
+    195,
+    246,
+    267,
+    421,
+    490,
+    747
+  ],
+  "fifth_event_times_sorted_s": [
+    8,
+    9,
+    9,
+    11,
+    12,
+    13,
+    13,
+    13,
+    14,
+    17,
+    17,
+    17,
+    21,
+    28,
+    37
+  ],
+  "nonmonotone_files": [
+    "S3 Dataset/2013 Correlation Data N5 8-17.pdf"
+  ],
+  "sensitivity_excluding_nonmonotone_files": {
+    "files": 14,
+    "trials_reaching_threshold": 14,
+    "fifth_event_time_min_s": 9,
+    "fifth_event_time_max_s": 37
+  },
+  "limitations": [
+    "Known active outdoor Pogonomyrmex barbatus nests, manually annotated events.",
+    "Includes returning-forager removal experiments and an excavated entrance chamber.",
+    "No non-entrance negatives or robot predictions: no specificity, false-positive rate or robot recall can be estimated.",
+    "Forager entry/exit counts are not necessarily all ant traffic, and individual ant identity is unavailable.",
+    "An event's final timestamp is not the exact end of camera coverage.",
+    "The archive contains 15 trial files; the paper describes 16 trials. No missing trial is imputed.",
+    "Same-second same-kind rows are retained: second-level time is not a unique event ID."
+  ]
+}

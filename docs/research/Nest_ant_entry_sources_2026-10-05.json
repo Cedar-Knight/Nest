@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "ant-entry-evidence",
+      "title": "工蚁活动能够提供入口线索",
+      "queries": [
+        {
+          "id": "entrance-fidelity",
+          "source": {
+            "label": "Lehue等，2020",
+            "links": [
+              {
+                "label": "Nest Entrances, Spatial Fidelity, and Foraging Patterns",
+                "url": "https://doi.org/10.3390/insects11050317"
+              }
+            ],
+            "caveats": [
+              "该研究来自野外Myrmica rubra，不能直接推广到所有室内蚂蚁。"
+            ]
+          },
+          "summary": "研究通过跟随工蚁定位活动入口，报告82%的返巢回到原入口；同一巢可使用多个入口。"
+        }
+      ]
+    },
+    {
+      "id": "five-events-replay",
+      "title": "公开入口记录能达到5次出入",
+      "queries": [
+        {
+          "id": "pless-entry-events",
+          "source": {
+            "label": "Pless等，2015，S3 Dataset",
+            "links": [
+              {
+                "label": "Interactions Increase Forager Availability and Activity in Harvester Ants",
+                "url": "https://doi.org/10.1371/journal.pone.0141971"
+              },
+              {
+                "label": "S3 Dataset",
+                "url": "https://doi.org/10.1371/journal.pone.0141971.s004"
+              }
+            ],
+            "metricDefinitions": [
+              {
+                "label": "达到5次出入的时间",
+                "definition": "达到5次出入的时间，是从录像0秒起将人工记录的AntIn和AntOut合计后，第5个事件的时间。"
+              }
+            ],
+            "filters": [
+              "物种：Pogonomyrmex barbatus",
+              "公开记录：6个巢，15份记录",
+              "事件：只计AntIn与AntOut",
+              "时间窗：每份录像首个0至180秒"
+            ],
+            "caveats": [
+              "记录来自已知、正在活动的野外入口，研究包含移除返巢工蚁等干预；没有非入口对照或机器人预测，不能计算室内误报率或视觉漏检率。",
+              "论文描述16次试验，当前公开压缩包含15份记录；未补入缺失试验。",
+              "N5在2013-08-17的后段有5处事件时间回退；保留原值，整份排除后仍有14/14份在9–37秒达到5次。"
+            ],
+            "evidenceFlow": [
+              {
+                "kind": "validation",
+                "title": "独立提取核对",
+                "detail": "pypdf与pdfplumber核对15份记录中首180秒出入事件所在页面；3,415个事件的时间、类别与重复次数一致。"
+              }
+            ]
+          },
+          "reportingPeriod": "2013年8月各录像的首个180秒",
+          "columns": [
+            {
+              "field": "colony",
+              "label": "巢编号"
+            },
+            {
+              "field": "date",
+              "label": "录像日期"
+            },
+            {
+              "field": "first_180s_events",
+              "label": "首180秒出入次数"
+            },
+            {
+              "field": "fifth_event_time_s",
+              "label": "第5次出入时间（秒）"
+            }
+          ],
+          "rows": [
+            {
+              "colony": "229",
+              "date": "2013-08-24",
+              "first_180s_events": 183,
+              "fifth_event_time_s": 13
+            },
+            {
+              "colony": "229",
+              "date": "2013-08-25",
+              "first_180s_events": 31,
+              "fifth_event_time_s": 37
+            },
+            {
+              "colony": "229",
+              "date": "2013-08-26",
+              "first_180s_events": 111,
+              "fifth_event_time_s": 28
+            },
+            {
+              "colony": "242",
+              "date": "2013-08-25",
+              "first_180s_events": 190,
+              "fifth_event_time_s": 12
+            },
+            {
+              "colony": "25",
+              "date": "2013-08-24",
+              "first_180s_events": 71,
+              "fifth_event_time_s": 17
+            },
+            {
+              "colony": "367",
+              "date": "2013-08-18",
+              "first_180s_events": 89,
+              "fifth_event_time_s": 17
+            },
+            {
+              "colony": "367",
+              "date": "2013-08-19",
+              "first_180s_events": 102,
+              "fifth_event_time_s": 17
+            },
+            {
+              "colony": "367",
+              "date": "2013-08-20",
+              "first_180s_events": 168,
+              "fifth_event_time_s": 13
+            },
+            {
+              "colony": "367",
+              "date": "2013-08-21",
+              "first_180s_events": 195,
+              "fifth_event_time_s": 13
+            },
+            {
+              "colony": "868",
+              "date": "2013-08-19",
+              "first_180s_events": 104,
+              "fifth_event_time_s": 21
+            },
+            {
+              "colony": "868",
+              "date": "2013-08-20",
+              "first_180s_events": 246,
+              "fifth_event_time_s": 11
+            },
+            {
+              "colony": "868",
+              "date": "2013-08-21",
+              "first_180s_events": 267,
+              "fifth_event_time_s": 14
+            },
+            {
+              "colony": "N5",
+              "date": "2013-08-17",
+              "first_180s_events": 747,
+              "fifth_event_time_s": 8
+            },
+            {
+              "colony": "N5",
+              "date": "2013-08-18",
+              "first_180s_events": 490,
+              "fifth_event_time_s": 9
+            },
+            {
+              "colony": "N5",
+              "date": "2013-08-20",
+              "first_180s_events": 421,
+              "fifth_event_time_s": 9
+            }
+          ],
+          "preview": {
+            "kind": "aggregate",
+            "note": "全部15份可获取记录，每行表示一份记录的汇总；这些记录不是15个独立巢。",
+            "totalRows": 15
+          },
+          "methods": [
+            {
+              "language": "python",
+              "code": "\"\"\"Replay published manual entry events; this does not evaluate robot vision.\"\"\"\n\nimport csv\nimport hashlib\nimport io\nimport json\nimport logging\nimport re\nimport statistics\nimport zipfile\nfrom collections import Counter\nfrom pathlib import Path\n\nfrom pypdf import PdfReader\n\n\nPROJECT_ROOT = next(\n    p for p in (Path.cwd(), *Path.cwd().parents)\n    if (p / \"docs/research/data/Pless2015\").is_dir()\n)\nDATA_DIR = PROJECT_ROOT / \"docs/research/data/Pless2015\"\nARCHIVE = DATA_DIR / \"journal.pone.0141971.s004.zip\"\nEXPECTED_SHA256 = \"ec3103f7db6fc1524cbda196159c4e63153d51dc02cd2547a45e0befab9a0b45\"\nWINDOW_SECONDS = 180\nTHRESHOLD = 5\nKINDS = (\"Ascend\", \"Descend\", \"AntIn\", \"AntOut\")\nPATTERN = re.compile(r\"(-?\\d+(?:\\.\\d+)?)\\s*(Ascend|Descend|AntIn|AntOut)(?![A-Za-z])\")\nlogging.getLogger(\"pypdf\").setLevel(logging.ERROR)\n\n\ndef analyse():\n    archive_bytes = ARCHIVE.read_bytes()\n    digest = hashlib.sha256(archive_bytes).hexdigest()\n    assert digest == EXPECTED_SHA256, \"The source archive has changed.\"\n    profiles, event_rows = [], []\n    archive = zipfile.ZipFile(io.BytesIO(archive_bytes))\n    pdf_names = sorted(n for n in archive.namelist() if n.endswith(\".pdf\"))\n    assert len(pdf_names) == 15\n    for name in pdf_names:\n        reader = PdfReader(io.BytesIO(archive.read(name)))\n        page_texts = [page.extract_text() or \"\" for page in reader.pages]\n        records = []\n        for page_index, text in enumerate(page_texts, start=1):\n            matches = list(PATTERN.finditer(text))\n            label_count = Counter(re.findall(r\"Ascend|Descend|AntIn|AntOut\", text))\n            parsed_count = Counter(m.group(2) for m in matches)\n            assert label_count == parsed_count, (name, page_index, label_count, parsed_count)\n            for match in matches:\n                time_s, kind = float(match.group(1)), match.group(2)\n                assert time_s >= 0 and time_s.is_integer(), (name, time_s)\n                records.append((time_s, kind))\n                event_rows.append({\n                    \"source_file\": name, \"row_id\": len(records),\n                    \"page\": page_index, \"time_s\": int(time_s), \"kind\": kind,\n                })\n        identity = re.search(r\"Data (.+) (\\d+)-(\\d+)\\.pdf$\", name)\n        assert identity\n        colony, month, day = identity.groups()\n        entry_times = sorted(t for t, k in records if k in (\"AntIn\", \"AntOut\"))\n        assert len(entry_times) >= THRESHOLD\n        assert entry_times[-1] >= WINDOW_SECONDS\n        first_window = [t for t in entry_times if 0 <= t <= WINDOW_SECONDS]\n        time_kind_counts = Counter(records)\n        profile = {\n            \"source_file\": name, \"colony\": colony,\n            \"date\": f\"2013-{int(month):02d}-{int(day):02d}\",\n            \"pdf_pages\": len(reader.pages), \"all_event_rows\": len(records),\n            \"counts_by_kind\": dict(Counter(k for _, k in records)),\n            \"max_recorded_event_time_s\": int(max(t for t, _ in records)),\n            \"entry_first_time_s\": int(entry_times[0]),\n            \"entry_last_time_s\": int(entry_times[-1]),\n            \"first_180s_entry_events\": len(first_window),\n            \"first_180s_in_events\": sum(0 <= t <= WINDOW_SECONDS and k == \"AntIn\" for t, k in records),\n            \"first_180s_out_events\": sum(0 <= t <= WINDOW_SECONDS and k == \"AntOut\" for t, k in records),\n            \"fifth_entry_time_s\": int(entry_times[THRESHOLD - 1]),\n            \"rule_reached_by_180s\": entry_times[THRESHOLD - 1] <= WINDOW_SECONDS,\n            \"same_second_same_kind_extra_rows\": sum(v - 1 for v in time_kind_counts.values()),\n            \"nonmonotone_kinds\": [\n                k for k in KINDS\n                if any(a > b for a, b in zip(\n                    [t for t, kind in records if kind == k],\n                    [t for t, kind in records if kind == k][1:],\n                ))\n            ],\n        }\n        assert profile[\"first_180s_entry_events\"] == (\n            profile[\"first_180s_in_events\"] + profile[\"first_180s_out_events\"]\n        )\n        profiles.append(profile)\n\n    fifth_times = [p[\"fifth_entry_time_s\"] for p in profiles]\n    counts = [p[\"first_180s_entry_events\"] for p in profiles]\n    clean_profiles = [p for p in profiles if not p[\"nonmonotone_kinds\"]]\n    summary = {\n        \"source\": \"Pless et al. (2015), S3 Dataset, DOI 10.1371/journal.pone.0141971.s004\",\n        \"archive_sha256\": digest, \"files\": len(profiles),\n        \"colonies\": len({p[\"colony\"] for p in profiles}),\n        \"parsed_event_rows\": len(event_rows),\n        \"external_entry_event_rows\": sum(p[\"counts_by_kind\"].get(k, 0) for p in profiles for k in (\"AntIn\", \"AntOut\")),\n        \"window_origin\": \"Video time 0, not first detected ant\",\n        \"window_predicate\": \"0 <= time_s <= 180; preserve each author-supplied event row\",\n        \"threshold\": THRESHOLD,\n        \"trials_reaching_threshold\": sum(p[\"rule_reached_by_180s\"] for p in profiles),\n        \"first_180s_count_min\": min(counts), \"first_180s_count_median\": statistics.median(counts),\n        \"first_180s_count_max\": max(counts),\n        \"fifth_event_time_min_s\": min(fifth_times),\n        \"fifth_event_time_median_s\": statistics.median(fifth_times),\n        \"fifth_event_time_max_s\": max(fifth_times),\n        \"first_180s_counts_sorted\": sorted(counts),\n        \"fifth_event_times_sorted_s\": sorted(fifth_times),\n        \"nonmonotone_files\": [p[\"source_file\"] for p in profiles if p[\"nonmonotone_kinds\"]],\n        \"sensitivity_excluding_nonmonotone_files\": {\n            \"files\": len(clean_profiles),\n            \"trials_reaching_threshold\": sum(p[\"rule_reached_by_180s\"] for p in clean_profiles),\n            \"fifth_event_time_min_s\": min(p[\"fifth_entry_time_s\"] for p in clean_profiles),\n            \"fifth_event_time_max_s\": max(p[\"fifth_entry_time_s\"] for p in clean_profiles),\n        },\n        \"limitations\": [\n            \"Known active outdoor Pogonomyrmex barbatus nests, manually annotated events.\",\n            \"Includes returning-forager removal experiments and an excavated entrance chamber.\",\n            \"No non-entrance negatives or robot predictions: no specificity, false-positive rate or robot recall can be estimated.\",\n            \"Forager entry/exit counts are not necessarily all ant traffic, and individual ant identity is unavailable.\",\n            \"An event's final timestamp is not the exact end of camera coverage.\",\n            \"The archive contains 15 trial files; the paper describes 16 trials. No missing trial is imputed.\",\n            \"Same-second same-kind rows are retained: second-level time is not a unique event ID.\",\n        ],\n    }\n    (DATA_DIR / \"entry_rule_summary.json\").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + \"\\n\", encoding=\"utf-8\")\n    (DATA_DIR / \"entry_data_profile.json\").write_text(json.dumps(profiles, ensure_ascii=False, indent=2) + \"\\n\", encoding=\"utf-8\")\n    with (DATA_DIR / \"extracted_events.csv\").open(\"w\", newline=\"\", encoding=\"utf-8\") as stream:\n        writer = csv.DictWriter(stream, fieldnames=event_rows[0].keys())\n        writer.writeheader()\n        writer.writerows(event_rows)\n    fields = [\"source_file\", \"colony\", \"date\", \"first_180s_in_events\", \"first_180s_out_events\", \"first_180s_entry_events\", \"fifth_entry_time_s\", \"rule_reached_by_180s\"]\n    with (DATA_DIR / \"entry_rule_trials.csv\").open(\"w\", newline=\"\", encoding=\"utf-8\") as stream:\n        writer = csv.DictWriter(stream, fieldnames=fields, extrasaction=\"ignore\")\n        writer.writeheader()\n        writer.writerows(profiles)\n\n    qa_dir = PROJECT_ROOT / \"tmp/ant-entry-qa-20261005\"\n    qa_dir.mkdir(parents=True, exist_ok=True)\n    sample_name = next(n for n in pdf_names if n.endswith(\"229 8-24.pdf\"))\n    sample_reader = PdfReader(io.BytesIO(archive.read(sample_name)))\n    qa_page = next(i for i, p in enumerate(sample_reader.pages, start=1) if \"AntIn\" in (p.extract_text() or \"\"))\n    (qa_dir / \"sample_229_8-24.pdf\").write_bytes(archive.read(sample_name))\n    print(json.dumps(summary, ensure_ascii=False, indent=2))\n    print(\"QA: first external-entry page in sample PDF:\", qa_page)\n    return summary\n\n\nif __name__ == \"__main__\":\n    analyse()\n\n\n\"\"\"Cross-check first-window events with an independent PDF text extractor.\"\"\"\n\nimport csv\nimport io\nimport json\nimport re\nimport zipfile\nfrom collections import Counter, defaultdict\nfrom pathlib import Path\n\nimport pdfplumber\n\nPROJECT_ROOT = next(\n    p for p in (Path.cwd(), *Path.cwd().parents)\n    if (p / \"docs/research/data/Pless2015\").is_dir()\n)\nDATA_DIR = PROJECT_ROOT / \"docs/research/data/Pless2015\"\npattern = re.compile(r\"(-?\\d+(?:\\.\\d+)?)\\s*(Ascend|Descend|AntIn|AntOut)(?![A-Za-z])\")\ngroups = defaultdict(list)\nwith (DATA_DIR / \"extracted_events.csv\").open(encoding=\"utf-8\") as stream:\n    for row in csv.DictReader(stream):\n        if row[\"kind\"] in (\"AntIn\", \"AntOut\") and 0 <= int(row[\"time_s\"]) <= 180:\n            groups[row[\"source_file\"]].append(row)\n\nchecks = []\nwith zipfile.ZipFile(DATA_DIR / \"journal.pone.0141971.s004.zip\") as archive:\n    for name, rows in groups.items():\n        pages = sorted({int(r[\"page\"]) for r in rows})\n        independent = []\n        with pdfplumber.open(io.BytesIO(archive.read(name))) as pdf:\n            for number in pages:\n                text = pdf.pages[number - 1].extract_text() or \"\"\n                independent.extend(\n                    (int(float(time_s)), kind)\n                    for time_s, kind in pattern.findall(text)\n                    if kind in (\"AntIn\", \"AntOut\") and 0 <= float(time_s) <= 180\n                )\n        expected = [(int(r[\"time_s\"]), r[\"kind\"]) for r in rows]\n        assert Counter(independent) == Counter(expected), name\n        checks.append({\"source_file\": name, \"pages_checked\": pages, \"first_180s_events\": len(expected), \"counts_and_event_multiplicity_match\": True})\n\nresult = {\n    \"extractors\": [\"pypdf\", \"pdfplumber\"],\n    \"scope\": \"PDF pages containing first-180-second external-entry events, selected from parsed page provenance\",\n    \"files_checked\": len(checks),\n    \"first_180s_events_checked\": sum(c[\"first_180s_events\"] for c in checks),\n    \"checks\": checks,\n}\n(DATA_DIR / \"entry_extraction_crosscheck.json\").write_text(json.dumps(result, indent=2) + \"\\n\", encoding=\"utf-8\")\nprint(json.dumps({k: v for k, v in result.items() if k != \"checks\"}, indent=2))\n"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "draft-0",
+  "task_id": "demo-search-001",
+  "record_id": "demo-record-001",
+  "source": "manual_example",
+  "candidate_id": "demo-entry-001",
+  "position": {
+    "frame": "demo-floor",
+    "unit": "m",
+    "map_version": "demo-map-1",
+    "xy": [
+      1,
+      0.5
+    ],
+    "source": "manually_given"
+  },
+  "observation": {
+    "start_s": 0,
+    "end_s": 180,
+    "clock": "sample_relative_seconds"
+  },
+  "events": [
+    {
+      "event_id": "demo-event-1",
+      "time_s": 10,
+      "direction": "enter",
+      "source": "manual_example"
+    },
+    {
+      "event_id": "demo-event-2",
+      "time_s": 20,
+      "direction": "exit",
+      "source": "manual_example"
+    },
+    {
+      "event_id": "demo-event-3",
+      "time_s": 30,
+      "direction": "enter",
+      "source": "manual_example"
+    },
+    {
+      "event_id": "demo-event-4",
+      "time_s": 40,
+      "direction": "exit",
+      "source": "manual_example"
+    },
+    {
+      "event_id": "demo-event-5",
+      "time_s": 50,
+      "direction": "enter",
+      "source": "manual_example"
+    }
+  ],
+  "media_available": false,
+  "note": "Synthetic events; no real evidence or transfer receipt."
+}
