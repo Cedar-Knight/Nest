@@ -425,3 +425,11 @@ markmap:
 - What I can now do：协作者可从任务、模块边界和验收进入项目；尚无新增系统实现或用户学习验收。
 - Still dependent on AI：本次仓库整理及文档框架由AI辅助完成。
 - Next task：审阅P0和P1接口草案，确定交接完成条件与失败策略后实现离线闭环。
+
+### 成员权限要求｜2026-10-06
+
+- Changed：协作约定改为Fork与PR；原仓库所有修改和新分支发布由负责人审批；CODEOWNERS声明唯一负责人。
+- Evidence：负责人明确选择公开后，仓库已公开；所有分支、所有标签及main审批共3条规则均Active，唯一例外为Cedar-Knight；API读回及任意分支覆盖核验通过。[访问控制记录](access-control.md)保存配置；无成员邀请，成员账号实测尚未开展。
+- What I can now do：成员可在Fork开发并提交PR；原仓库修改和分支发布仅负责人执行。用户独立配置能力未作验收。
+- Still dependent on AI：权限核查与规则整理由AI辅助；账号套餐／可见性选择归用户。
+- Next task：将项目链接发给成员；由成员账号检查Fork／PR路径，随后按P1认领任务，不授予原仓库写权限。
