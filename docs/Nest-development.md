@@ -417,11 +417,11 @@ markmap:
 - Still dependent on AI：本次预览打开与界面核查由AI辅助完成。
 - Next task：用户查看端到端计划分支，完成P0内容审阅；预览通过不代表计划基线或实现已通过。
 
-## 仓库协作准备｜2026-10-06
+## 仓库协作准备｜Verified，2026-10-06
 
-- 当前任务：整理协作框架并发布至既有GitHub仓库；P0内容审阅与P1实现仍未完成。
+- 已完成任务：整理协作框架并发布至既有GitHub仓库；P0内容审阅与P1实现仍未完成。
 - Changed：清理CSP、旧污染源代码／测试、作业图与历史演示；整理README、模块边界、P1接口草案及贡献模板。
-- Evidence：46个原文件本地归档并逐文件SHA256核对；清单位于被忽略的 `archive/local-2026-10-06/relocation-manifest.json`；[发布检查](repository-checks-2026-10-06.md)记录链接、JSON、公开数据复跑与独立提取检查，均通过。上传结果以远端提交核对为准。
+- Evidence：46个原文件本地归档并逐文件SHA256核对；清单位于被忽略的 `archive/local-2026-10-06/relocation-manifest.json`；[发布检查](repository-checks-2026-10-06.md)记录链接、JSON、公开数据复跑与独立提取检查，均通过。框架提交 `ee3ae49` 已推送至main，远端提交与本地一致。
 - What I can now do：协作者可从任务、模块边界和验收进入项目；尚无新增系统实现或用户学习验收。
 - Still dependent on AI：本次仓库整理及文档框架由AI辅助完成。
 - Next task：审阅P0和P1接口草案，确定交接完成条件与失败策略后实现离线闭环。

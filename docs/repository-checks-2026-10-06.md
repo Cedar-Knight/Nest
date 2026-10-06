@@ -8,6 +8,6 @@
 - 独立提取：15份记录的首180秒共3,415个进出事件，其时刻、方向和事件重复次数核对一致。
 - 环境：Python运行时，pypdf 6.10.0、pdfplumber 0.11.9；研究依赖单独记录在 `requirements-research.txt`。
 - 系统边界：本次没有实现机器人控制、视觉识别、返航、对接或P1流程。人工接口样例不作为运行证据。
-- 发布目标：既有 `Cedar-Knight/Nest` 的main分支，普通追加提交；发布是否成功以远端提交核对为准。
+- 发布结果：既有 [Cedar-Knight/Nest](https://github.com/Cedar-Knight/Nest) 的main分支，普通追加提交；框架提交 `ee3ae49ccb4584eae29ba1e791cf779b6bc351e5` 已推送，远端与本地SHA核对一致。此文档的状态更新另行提交，不重写历史。
 
 下一步：负责人审阅计划和交接接口，协作者可按Issue模板认领P1的一个验收边界。
