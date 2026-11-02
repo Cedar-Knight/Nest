@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "task_id": "20261102-github-sync",
+  "project": "Nest",
+  "mode": "delivery",
+  "workspace_root": "D:\\PROGRAM\\Nest",
+  "handoff_receipt": null,
+  "state": "VERIFY",
+  "state_history": [
+    {
+      "from": null,
+      "to": "INTAKE",
+      "timestamp": "2026-11-02T12:39:08.629635+00:00",
+      "evidence": "task created",
+      "mode": "delivery"
+    },
+    {
+      "from": "INTAKE",
+      "to": "BASELINE",
+      "timestamp": "2026-11-02T12:39:08.874678+00:00",
+      "evidence": "Release scope and acceptance recorded; existing Nest publication provides the local precedent.",
+      "mode": "delivery"
+    },
+    {
+      "from": "BASELINE",
+      "to": "CLASSIFY",
+      "timestamp": "2026-11-02T12:39:09.072808+00:00",
+      "evidence": "Release scope and acceptance recorded; existing Nest publication provides the local precedent.",
+      "mode": "delivery"
+    },
+    {
+      "from": "CLASSIFY",
+      "to": "SELECT_PATTERN",
+      "timestamp": "2026-11-02T12:39:09.262400+00:00",
+      "evidence": "Release scope and acceptance recorded; existing Nest publication provides the local precedent.",
+      "mode": "delivery"
+    },
+    {
+      "from": "SELECT_PATTERN",
+      "to": "CONTRACT",
+      "timestamp": "2026-11-02T12:39:09.452439+00:00",
+      "evidence": "Release scope and acceptance recorded; existing Nest publication provides the local precedent.",
+      "mode": "delivery"
+    },
+    {
+      "from": "CONTRACT",
+      "to": "EXECUTE",
+      "timestamp": "2026-11-02T12:39:09.638182+00:00",
+      "evidence": "Release scope and acceptance recorded; existing Nest publication provides the local precedent.",
+      "mode": "delivery"
+    },
+    {
+      "from": "EXECUTE",
+      "to": "VERIFY",
+      "timestamp": "2026-11-02T12:42:15.073921+00:00",
+      "evidence": "Prepared-file scan passed; current source limitations and relevant build outcomes recorded in the publication report.",
+      "mode": "delivery"
+    }
+  ],
+  "observable_result": "Latest reviewed project source and documentation synchronized to the matching GitHub repository",
+  "primary_capability": null,
+  "baseline_evidence": [
+    "Local filesystem and Git status inspected on 2026-11-02; Nest main matched remote d2b4015c47e3a6c962738552105e937964926b9f; Tidal and Cagora-fv had no Git metadata."
+  ],
+  "classification": {
+    "task_type": "release/operation",
+    "stack": [
+      "Git",
+      "GitHub"
+    ],
+    "risk_flags": [
+      "credential exclusion",
+      "external upload"
+    ]
+  },
+  "selected_patterns": [
+    "release-contract/build-review-upload-readback-v1"
+  ],
+  "pattern_status": "candidate",
+  "sam_owned": null,
+  "ai_owned": "Prepare source publication, review exclusions, run relevant checks, commit, upload and verify remote SHA without rewriting history.",
+  "assistance_level": "A0",
+  "acceptance_checks": [
+    "Reviewed tracked files exclude credentials, dependencies, build outputs and local archives",
+    "Local committed tree matches the uploaded main branch"
+  ],
+  "stop_rule": "Stop the affected upload on secret detection, conflicting remote changes, missing authorization or failed verification; preserve other project progress.",
+  "time_box_minutes": 60,
+  "project_status": "not_run",
+  "learning_status": "not_assessed",
+  "evidence": [
+    "Release scope and acceptance recorded; existing Nest publication provides the local precedent.",
+    "Release scope and acceptance recorded; existing Nest publication provides the local precedent.",
+    "Release scope and acceptance recorded; existing Nest publication provides the local precedent.",
+    "Release scope and acceptance recorded; existing Nest publication provides the local precedent.",
+    "Release scope and acceptance recorded; existing Nest publication provides the local precedent.",
+    "Prepared-file scan passed; current source limitations and relevant build outcomes recorded in the publication report."
+  ],
+  "learning_evidence": [],
+  "persistence": {
+    "state_path": "",
+    "plan_path": "",
+    "evidence_paths": [],
+    "markmap_path": "",
+    "log_path": ""
+  },
+  "failure_route": "VERIFY -> REPAIR for packaging issues; EXECUTE -> BLOCKED for missing remote access.",
+  "next_task": "Continue the existing project plan; no feature implementation is part of this publication."
+}

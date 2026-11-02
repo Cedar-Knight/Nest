@@ -433,3 +433,12 @@ markmap:
 - What I can now do：成员可在Fork开发并提交PR；原仓库修改和分支发布仅负责人执行。用户独立配置能力未作验收。
 - Still dependent on AI：权限核查与规则整理由AI辅助；账号套餐／可见性选择归用户。
 - Next task：将项目链接发给成员；由成员账号检查Fork／PR路径，随后按P1认领任务，不授予原仓库写权限。
+
+## GitHub source synchronization — 2026-11-02
+
+Task `20261102-github-sync` [In progress].
+- Changed: verify current main against GitHub and record the source publication audit.
+- Evidence: [publication record](github-sync-2026-11-02.md); foundation hashes refreshed there.
+- What I can now do: no new learner capability was assessed.
+- Still dependent on AI: Git review and publication verification.
+- Next task: preserve the existing P0/P1 review requirement; no robot or algorithm implementation is included.

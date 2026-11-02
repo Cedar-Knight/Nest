@@ -1,0 +1,222 @@
+{
+  "project": "Nest",
+  "tracked_files": 42,
+  "total_bytes": 4153218,
+  "json_parsed": 8,
+  "python_syntax_parsed": 3,
+  "historical_syntax_limitations": [],
+  "secret_scan_scope": "Common token/private-key signatures and exact existing Cagora database passwords; not an exhaustive security audit",
+  "findings": [],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 66,
+      "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b"
+    },
+    {
+      "path": ".github/CODEOWNERS",
+      "bytes": 95,
+      "sha256": "ce30e842d10cf226ecd9326197d446c5e2f6b9fa33007b67888b6a02ad813e10"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/task.md",
+      "bytes": 327,
+      "sha256": "23178f7c1933a49064995d1bd2d5bace4e6364bf0e6d3844f7bf39d534025e92"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "bytes": 386,
+      "sha256": "c26b4cd0ad67b1d1a7c08ab4a71fb128866954d2c63117b367a805ccb690508b"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 431,
+      "sha256": "7f1fffed029cd5fe989720d1ea9268152239b1e4af8e21c01b5c0ba95c03c779"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 2965,
+      "sha256": "f9629bb19a246316fd5b05e5d36f21619ec22ea130aaef6c6d3378d7b2aec63d"
+    },
+    {
+      "path": "Nest Project — AI Development Rules.md",
+      "bytes": 9446,
+      "sha256": "d61b4f572f6ba8829868304e5f519aecf8a692003813fa6a34380c274081c3d6"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3838,
+      "sha256": "4b3662a3db3928f2ecc22507f6a30983421dd93e79e026b55d050dada84babb0"
+    },
+    {
+      "path": "docs/Nest-development.md",
+      "bytes": 32576,
+      "sha256": "7f37da97c2c16f62bdba5e686eb5483a52e78746a2b3a1f36ed764c981680a83"
+    },
+    {
+      "path": "docs/access-control.md",
+      "bytes": 3251,
+      "sha256": "3dc02b3da64a3a8827a29d5b0c5440d628756049d55bbf88c5627d34f2b769f2"
+    },
+    {
+      "path": "docs/architecture.md",
+      "bytes": 1726,
+      "sha256": "d22ff218d72b61080ec5a857a22a61ee79ed14b933cada3d8583d6a55d6dfa48"
+    },
+    {
+      "path": "docs/github-sync-2026-11-02.md",
+      "bytes": 1667,
+      "sha256": "6294045912c5130cb1e032ecf813b5c29098b4f1a67246f88bc42020ed021223"
+    },
+    {
+      "path": "docs/github-sync-2026-11-02.task.json",
+      "bytes": 4021,
+      "sha256": "32bc1e73d18ebad20cdefb6982e04250c6d4a0ab0dcfbd4614c3d042ac316d6e"
+    },
+    {
+      "path": "docs/interfaces.md",
+      "bytes": 2217,
+      "sha256": "6e90a2102fc2fcbf83f808d9b307dc7c1d326dcb28cfd5146b78d940c81f83e1"
+    },
+    {
+      "path": "docs/repository-checks-2026-10-06.md",
+      "bytes": 1388,
+      "sha256": "714631457cc5ce1cea7fff4b31e73be7e4fadd4c1611847ac6643b4a8dce8ac2"
+    },
+    {
+      "path": "docs/research/Nest_ant_entry_evidence_2026-10-05.md",
+      "bytes": 6577,
+      "sha256": "e1c283313db335efe130c95f8daf6eadb780fd0fa6436c78908a5003ba0bdb55"
+    },
+    {
+      "path": "docs/research/Nest_ant_entry_public_data_2026-10-05.ipynb",
+      "bytes": 18882,
+      "sha256": "807dfa3cc1bdc5500d340530d1c7c82cf9aa75e91adab61c19dd172b6f1e8445"
+    },
+    {
+      "path": "docs/research/Nest_ant_entry_sources_2026-10-05.json",
+      "bytes": 17353,
+      "sha256": "6f627edc6e73a8f2a6c850bcab5131a2fe50adda7d630e639dfba5c488b2f294"
+    },
+    {
+      "path": "docs/research/README.md",
+      "bytes": 1492,
+      "sha256": "981340b08cd2d497a2542651290440e877b27d1e89deceb31a58404e0f760b10"
+    },
+    {
+      "path": "docs/research/data/Pless2015/entry_data_profile.json",
+      "bytes": 9749,
+      "sha256": "384c5e542f663d0f5f31630382db2eca3a0922cdc4129aa2a68aa70b66eae679"
+    },
+    {
+      "path": "docs/research/data/Pless2015/entry_extraction_crosscheck.json",
+      "bytes": 4538,
+      "sha256": "674c13ec0bed13a5dc2b01bdb2aa3e7e97704cfd533d86f34717d1e3bdbc5b48"
+    },
+    {
+      "path": "docs/research/data/Pless2015/entry_rule_summary.json",
+      "bytes": 2019,
+      "sha256": "8933f42d5ef6a42e2cf9cb986c5a3db734608cd408b60a54f9fe3b0a56b455c2"
+    },
+    {
+      "path": "docs/research/data/Pless2015/entry_rule_trials.csv",
+      "bytes": 1329,
+      "sha256": "e92243187a6a38484c8e62a4bc8996352244b266364c90990f23b6e1cce9ecb6"
+    },
+    {
+      "path": "docs/research/data/Pless2015/extracted_events.csv",
+      "bytes": 2486883,
+      "sha256": "0feefa3fe8687e1b6120c2da1e4ad8b51e55a216c3d9184ad2748335feda8a28"
+    },
+    {
+      "path": "docs/research/data/Pless2015/journal.pone.0141971.s004.zip",
+      "bytes": 1455305,
+      "sha256": "ec3103f7db6fc1524cbda196159c4e63153d51dc02cd2547a45e0befab9a0b45"
+    },
+    {
+      "path": "docs/research/data/Pless2015/journal.pone.0141971.s009.docx",
+      "bytes": 61728,
+      "sha256": "0cafc686bc284aea0db3d9cefbd006bb8c62742e3c3f266b56fed7a1db564383"
+    },
+    {
+      "path": "docs/research/scripts/ant_entry_crosscheck.py",
+      "bytes": 2167,
+      "sha256": "bd0f8099f8319cbc24dcf58d2a7a91c5949abfb4c5c75511f65b219e563ac3aa"
+    },
+    {
+      "path": "docs/research/scripts/ant_entry_public_data.py",
+      "bytes": 8113,
+      "sha256": "7ce22eff491fd3555c3778451f5539ab0594886fdebd7ceb0445780ee0342adc"
+    },
+    {
+      "path": "docs/research/scripts/package_ant_entry_review.py",
+      "bytes": 5804,
+      "sha256": "7ae56bb8bb1bbbd2d84d4f30cd55a4e7f1aa29fadc681a8cb24afe66bf2b0fd7"
+    },
+    {
+      "path": "docs/tasks/P1-offline-handoff.md",
+      "bytes": 1718,
+      "sha256": "588f2732483076340ded4b3262054dd6f913a101c2e0e288d91d8457885fd9ca"
+    },
+    {
+      "path": "examples/handoff/README.md",
+      "bytes": 449,
+      "sha256": "e904a9805fef717c7f41dc9e6f8ba375b47e1b0d666220096e85af2d63bb276d"
+    },
+    {
+      "path": "examples/handoff/manual-observation.json",
+      "bytes": 1241,
+      "sha256": "9eeaae670132082b3f9a0b24b9668955613d91f0644225c93015f2a1f2fdbfca"
+    },
+    {
+      "path": "examples/handoff/search-task.json",
+      "bytes": 526,
+      "sha256": "995a3728bcaac43c599b72d86bcf24305cb5f5842e5a8086f52350ce23403083"
+    },
+    {
+      "path": "requirements-research.txt",
+      "bytes": 35,
+      "sha256": "6df5bf789398ffcde2b74da0c8177088b3c8f5d0e6187f9b9e4515c40aeb3c57"
+    },
+    {
+      "path": "src/nest/README.md",
+      "bytes": 351,
+      "sha256": "9f7692951510a6a0fbfb543cd92720d374d09fcda7e76bc15666ce114c0a6896"
+    },
+    {
+      "path": "src/nest/evaluation/README.md",
+      "bytes": 351,
+      "sha256": "8cbf0a0753caed2eaf465621ba06a254cb7ff1085d09a32b47d30f243ce64473"
+    },
+    {
+      "path": "src/nest/localization/README.md",
+      "bytes": 369,
+      "sha256": "7b38e68b2c6132887750bf6b92d0de9d7c83ac86135a9d49d355f28e7c906e68"
+    },
+    {
+      "path": "src/nest/mission/README.md",
+      "bytes": 372,
+      "sha256": "286337851b11440029756a2ad3797d5f7d03219e850b8a3eeff52893245812a0"
+    },
+    {
+      "path": "src/nest/mother/README.md",
+      "bytes": 360,
+      "sha256": "820e77890a182c0fd85980df96693f768f8fca04ed46329875fa23a25b11c7cb"
+    },
+    {
+      "path": "src/nest/perception/README.md",
+      "bytes": 378,
+      "sha256": "f22aee4f15ccdd81716623054bfde696fda3bb8cbace1d3d48ac056d0ffa9058"
+    },
+    {
+      "path": "src/nest/scout/README.md",
+      "bytes": 381,
+      "sha256": "9985e73bb73fd15cd8939c018f7276131fcae040ce9e6cbd7a66bda256a602d9"
+    },
+    {
+      "path": "src/nest/transport/README.md",
+      "bytes": 348,
+      "sha256": "18917a57d6f88da02aa9398aba29b1cbbe2e4768bf7106070a51cbedde9830d2"
+    }
+  ]
+}
