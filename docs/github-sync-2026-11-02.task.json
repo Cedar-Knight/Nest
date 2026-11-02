@@ -4,8 +4,11 @@
   "project": "Nest",
   "mode": "delivery",
   "workspace_root": "D:\\PROGRAM\\Nest",
-  "handoff_receipt": null,
-  "state": "VERIFY",
+  "handoff_receipt": {
+    "path": "docs/github-sync-2026-11-02.receipt.json",
+    "sha256": "b33fe87af00f162a4fb1537231bb4bad22af6b8e895ee1298cf9c89db01bc51b"
+  },
+  "state": "CLOSE",
   "state_history": [
     {
       "from": null,
@@ -55,6 +58,27 @@
       "timestamp": "2026-11-02T12:42:15.073921+00:00",
       "evidence": "Prepared-file scan passed; current source limitations and relevant build outcomes recorded in the publication report.",
       "mode": "delivery"
+    },
+    {
+      "from": "VERIFY",
+      "to": "ASSESS",
+      "timestamp": "2026-11-02T12:44:36.951268+00:00",
+      "evidence": "Source snapshot 1e73d2f89dd632c2bc458480895780144b42d5bc uploaded and remote main SHA read back equal; no independent learner assessment.",
+      "mode": "delivery"
+    },
+    {
+      "from": "ASSESS",
+      "to": "PERSIST",
+      "timestamp": "2026-11-02T12:44:37.216797+00:00",
+      "evidence": "Source snapshot 1e73d2f89dd632c2bc458480895780144b42d5bc uploaded and remote main SHA read back equal; no independent learner assessment.",
+      "mode": "delivery"
+    },
+    {
+      "from": "PERSIST",
+      "to": "CLOSE",
+      "timestamp": "2026-11-02T12:44:37.460045+00:00",
+      "evidence": "Project-owned status, plan, log, evidence and hashed handoff receipt persisted.",
+      "mode": "delivery"
     }
   ],
   "observable_result": "Latest reviewed project source and documentation synchronized to the matching GitHub repository",
@@ -76,7 +100,7 @@
   "selected_patterns": [
     "release-contract/build-review-upload-readback-v1"
   ],
-  "pattern_status": "candidate",
+  "pattern_status": "project-verified",
   "sam_owned": null,
   "ai_owned": "Prepare source publication, review exclusions, run relevant checks, commit, upload and verify remote SHA without rewriting history.",
   "assistance_level": "A0",
@@ -86,7 +110,7 @@
   ],
   "stop_rule": "Stop the affected upload on secret detection, conflicting remote changes, missing authorization or failed verification; preserve other project progress.",
   "time_box_minutes": 60,
-  "project_status": "not_run",
+  "project_status": "pass",
   "learning_status": "not_assessed",
   "evidence": [
     "Release scope and acceptance recorded; existing Nest publication provides the local precedent.",
@@ -94,15 +118,21 @@
     "Release scope and acceptance recorded; existing Nest publication provides the local precedent.",
     "Release scope and acceptance recorded; existing Nest publication provides the local precedent.",
     "Release scope and acceptance recorded; existing Nest publication provides the local precedent.",
-    "Prepared-file scan passed; current source limitations and relevant build outcomes recorded in the publication report."
+    "Prepared-file scan passed; current source limitations and relevant build outcomes recorded in the publication report.",
+    "Source snapshot 1e73d2f89dd632c2bc458480895780144b42d5bc uploaded and remote main SHA read back equal; no independent learner assessment.",
+    "Source snapshot 1e73d2f89dd632c2bc458480895780144b42d5bc uploaded and remote main SHA read back equal; no independent learner assessment.",
+    "Project-owned status, plan, log, evidence and hashed handoff receipt persisted."
   ],
   "learning_evidence": [],
   "persistence": {
-    "state_path": "",
-    "plan_path": "",
-    "evidence_paths": [],
-    "markmap_path": "",
-    "log_path": ""
+    "state_path": "docs/Nest-development.md",
+    "plan_path": "docs/Nest-development.md",
+    "markmap_path": "docs/Nest-development.md",
+    "log_path": "docs/Nest-development.md",
+    "evidence_paths": [
+      "docs/github-sync-2026-11-02.md",
+      "docs/github-sync-2026-11-02.remote.json"
+    ]
   },
   "failure_route": "VERIFY -> REPAIR for packaging issues; EXECUTE -> BLOCKED for missing remote access.",
   "next_task": "Continue the existing project plan; no feature implementation is part of this publication."

@@ -1,0 +1,10 @@
+{
+  "task_id": "20261102-github-sync",
+  "repository": "Cedar-Knight/Nest",
+  "branch": "main",
+  "source_commit": "1e73d2f89dd632c2bc458480895780144b42d5bc",
+  "remote_commit": "1e73d2f89dd632c2bc458480895780144b42d5bc",
+  "matched": true,
+  "visibility": "public",
+  "scope": "Initial source snapshot upload verified; subsequent closeout-only commit will be verified separately in final delivery report."
+}
